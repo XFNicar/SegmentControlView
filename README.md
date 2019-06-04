@@ -1,0 +1,2 @@
+# SegmentControlView
+像TableView一样方便定制UI的段控制器
