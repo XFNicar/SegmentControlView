@@ -55,8 +55,8 @@ SegmentControlView
   
   // 点击segmentBar 或者 subView 停止滚动也会调用该方法
   func didSelectedSegmentBar(segmentControl: SegmentControlView, atIndex index: Int) {
-      print("点击了segmentBar \(String(index))")
-   }
+     print("点击了segmentBar \(String(index))")
+  }
   
   // 点击subView
   func didSelectedChildView(segmentControl: SegmentControlView, atIndex index: Int) {
