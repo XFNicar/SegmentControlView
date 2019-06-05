@@ -8,12 +8,14 @@
 
 import UIKit
 
+// 选中事件 delegate
 protocol SegmentControlDelegate : class {
     func didSelectedSegmentBar(segmentControl:SegmentControlView, atIndex index:Int)
     func didSelectedChildView(segmentControl:SegmentControlView, atIndex index:Int)
     
 }
 
+// DataSource
 protocol SegmentControlDataSource: class {
     func segmentControlView(controlView:SegmentControlView, barItemAtIndex indexPath:IndexPath) -> UICollectionViewCell
     func segmentControlView(controlView:SegmentControlView, subViewAtIndex indexPath:IndexPath) -> UICollectionViewCell
