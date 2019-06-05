@@ -55,31 +55,31 @@ SegmentControlView
   
   // 点击segmentBar 或者 subView 停止滚动也会调用该方法
   func didSelectedSegmentBar(segmentControl: SegmentControlView, atIndex index: Int) {
-       print("点击了segmentBar \(String(index))")
+      print("点击了segmentBar \(String(index))")
    }
   
   // 点击subView
   func didSelectedChildView(segmentControl: SegmentControlView, atIndex index: Int) {
-  		print("点击了segmentSubView\(String(index))")
+  	print("点击了segmentSubView\(String(index))")
   }
   
   
   // 返回 segmentBarItem 
   func segmentControlView(controlView: SegmentControlView, barItemAtIndex indexPath: IndexPath) -> UICollectionViewCell {
   
-  		let cell = controlView.dequeueBarItemReusableCell(withReuseIdentifier: SegmentControlId.segmentBarId.rawValue, cellForitemAt: indexPath) as! SegmentBarCVCell
-  		cell.updateUI(WithModel: controlView.barModels[indexPath.row])
-  		return cell
+  	let cell = controlView.dequeueBarItemReusableCell(withReuseIdentifier: SegmentControlId.segmentBarId.rawValue, cellForitemAt: indexPath) as! SegmentBarCVCell
+  	cell.updateUI(WithModel: controlView.barModels[indexPath.row])
+  	return cell
   }
   // 返回segmentItemView 
   func segmentControlView(controlView: SegmentControlView, subViewAtIndex indexPath: IndexPath) -> UICollectionViewCell {
   
-  		let cell = controlView.dequeueSubViewReusableCell(withReuseIdentifier: SegmentControlId.childViewId.rawValue, cellForitemAt: indexPath)
-  		return cell
+  	let cell = controlView.dequeueSubViewReusableCell(withReuseIdentifier: SegmentControlId.childViewId.rawValue, cellForitemAt: indexPath)
+  	return cell
   }
   // 设置标题数组
   func segmentBarTitles(controlView: SegmentControlView) -> [String] {
-  		return ["日本","马来西亚","新加坡"]
+  	return ["日本","马来西亚","新加坡"]
   }
   ```
 
