@@ -25,8 +25,10 @@ class SegmentBarCVCell: UICollectionViewCell {
         subBarTitleLab.text = model.title
         if model.isSelected! {
             subBarTitleLab.textColor = .red
+            bottomLineView.backgroundColor = .red
         } else {
             subBarTitleLab.textColor = .white
+            bottomLineView.backgroundColor = self.backgroundColor
         }
     }
 

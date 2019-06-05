@@ -19,14 +19,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SE-kl-zdt">
-                        <rect key="frame" x="0.0" y="48" width="84" height="2"/>
+                        <rect key="frame" x="10.5" y="48" width="63" height="2"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="2" id="jyM-5f-lHb"/>
+                            <constraint firstAttribute="height" constant="2" id="HjE-jc-nPc"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezi-b2-Z9F">
-                        <rect key="frame" x="0.0" y="0.0" width="84" height="48"/>
+                        <rect key="frame" x="10.5" y="0.0" width="63" height="47"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <color key="textColor" red="0.1333333333" green="0.68235294120000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -34,14 +34,12 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="7SE-kl-zdt" firstAttribute="top" secondItem="Ezi-b2-Z9F" secondAttribute="bottom" id="3FF-QO-9Pn"/>
-                <constraint firstAttribute="trailing" secondItem="7SE-kl-zdt" secondAttribute="trailing" id="7Gl-d9-Pgd"/>
-                <constraint firstItem="7SE-kl-zdt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IBC-1p-Ogj"/>
-                <constraint firstItem="Ezi-b2-Z9F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SkT-KU-paa"/>
-                <constraint firstAttribute="bottom" secondItem="7SE-kl-zdt" secondAttribute="bottom" id="cqh-uz-idL"/>
-                <constraint firstAttribute="trailing" secondItem="Ezi-b2-Z9F" secondAttribute="trailing" id="krv-Y9-REn"/>
-                <constraint firstItem="7SE-kl-zdt" firstAttribute="top" secondItem="Ezi-b2-Z9F" secondAttribute="bottom" id="lBB-yb-4iA"/>
-                <constraint firstItem="Ezi-b2-Z9F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xWC-UP-dJb"/>
+                <constraint firstItem="7SE-kl-zdt" firstAttribute="width" secondItem="Ezi-b2-Z9F" secondAttribute="width" priority="750" id="7NF-fw-4LH"/>
+                <constraint firstItem="7SE-kl-zdt" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="902-a2-aEY"/>
+                <constraint firstItem="Ezi-b2-Z9F" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="M16-x8-SgP"/>
+                <constraint firstItem="Ezi-b2-Z9F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mv5-bu-Plf"/>
+                <constraint firstAttribute="bottom" secondItem="7SE-kl-zdt" secondAttribute="bottom" id="Mzh-31-MQG"/>
+                <constraint firstItem="7SE-kl-zdt" firstAttribute="top" secondItem="Ezi-b2-Z9F" secondAttribute="bottom" constant="1" id="ky9-0T-dca"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="84" height="50"/>
